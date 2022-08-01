@@ -6,7 +6,7 @@
 /*   By: bkrasnos <bkrasnos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/05 14:46:14 by bkrasnos          #+#    #+#             */
-/*   Updated: 2022/07/05 15:09:42 by bkrasnos         ###   ########.fr       */
+/*   Updated: 2022/08/01 13:36:44 by bkrasnos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,10 +25,7 @@ int	mouse_press(int button, int x, int y, t_t *t)
 int	key_press(int keycode, t_t *t)
 {
 	if (keycode == 53)
-	{
-		destroy_exit(t);
-		exit(0);
-	}
+		return (destroy_exit(t));
 	else if (keycode == 69 && t->stop == 1)
 	{
 		simple_zoom1(t);
@@ -108,13 +105,13 @@ void	key_press4(int keycode, t_t *t)
 {
 	if (keycode == 84)
 	{
-		t->name = "Burningship";
+		t->name = "burningship";
 		init(t, t->name);
 		check_ar(t);
 	}
 	else if (keycode == 85)
 	{
-		t->name = "Mandelbrot";
+		t->name = "mandelbrot";
 		init(t, t->name);
 		check_ar(t);
 	}

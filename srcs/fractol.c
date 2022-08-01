@@ -6,7 +6,7 @@
 /*   By: bkrasnos <bkrasnos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/05 14:46:13 by bkrasnos          #+#    #+#             */
-/*   Updated: 2022/07/05 14:55:02 by bkrasnos         ###   ########.fr       */
+/*   Updated: 2022/08/01 13:35:01 by bkrasnos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -91,5 +91,6 @@ void	mlx_ho(t_t *t)
 	mlx_hook(t->win, 4, 1, mouse_press, t);
 	mlx_hook(t->win, 6, 1, mouse_move, t);
 	mlx_hook(t->win, 2, 1, key_press, t);
+	mlx_hook(t->win, 17, 0L, destroy_exit, t);
 	mlx_loop(t->ptr);
 }

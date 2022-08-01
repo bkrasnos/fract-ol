@@ -6,7 +6,7 @@
 /*   By: bkrasnos <bkrasnos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/05 14:46:15 by bkrasnos          #+#    #+#             */
-/*   Updated: 2022/07/05 15:20:59 by bkrasnos         ###   ########.fr       */
+/*   Updated: 2022/07/07 12:58:57 by bkrasnos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,29 +37,29 @@ void	menu(t_t *t)
 
 void	string_put(t_t *t)
 {
-	mlx_string_put(t->ptr, t->win, 650, 70, 0xf7b079,
+	mlx_string_put(t->ptr, t->win, 650, 70, 0x00ffaf,
 		"    Scroll UP | Scroll DOWN         ");
 	mlx_string_put(t->ptr, t->win, 650, 110, 0xFFFFFF,
 		"-------------MOVE------------");
-	mlx_string_put(t->ptr, t->win, 650, 140, 0xf7b079,
+	mlx_string_put(t->ptr, t->win, 650, 140, 0x00ffaf,
 		"     Arrow UP | Arrow DOWN    ");
-	mlx_string_put(t->ptr, t->win, 650, 180, 0xf7b079,
+	mlx_string_put(t->ptr, t->win, 650, 180, 0x00ffaf,
 		"  Arrow RIGHT | Arrow LEFT ");
 	mlx_string_put(t->ptr, t->win, 650, 240, 0xFFFFFF,
 		"--------CHANGE FRACTAL-------");
-	mlx_string_put(t->ptr, t->win, 650, 280, 0xf7b079,
+	mlx_string_put(t->ptr, t->win, 650, 280, 0x00ffaf,
 		"   mandelbrot | BUTTON (3) ");
-	mlx_string_put(t->ptr, t->win, 650, 310, 0xf7b079,
+	mlx_string_put(t->ptr, t->win, 650, 310, 0x00ffaf,
 		"  burningship | BUTTON (2) ");
-	mlx_string_put(t->ptr, t->win, 650, 340, 0xf7b079,
+	mlx_string_put(t->ptr, t->win, 650, 340, 0x00ffaf,
 		"        julia | BUTTON (1) ");
 	mlx_string_put(t->ptr, t->win, 650, 380, 0xFFFFFF,
 		"---------CHANGE COLOR--------");
-	mlx_string_put(t->ptr, t->win, 650, 410, 0xf7b079,
+	mlx_string_put(t->ptr, t->win, 650, 410, 0x00ffaf,
 		"         BUTTON (enter) ");
 	mlx_string_put(t->ptr, t->win, 650, 440, 0xFFFFFF,
 		"--------RESTART FRACTAL-------");
-	mlx_string_put(t->ptr, t->win, 650, 470, 0xf7b079,
+	mlx_string_put(t->ptr, t->win, 650, 470, 0x00ffaf,
 		"         BUTTON (0) ");
 }
 
@@ -74,7 +74,7 @@ void	init(t_t *t, char *str)
 	t->zoom = 0;
 	t->stop = 0;
 	t->max = 40;
-	t->color = 20;
+	t->color = 10;
 	t->name = str;
 }
 

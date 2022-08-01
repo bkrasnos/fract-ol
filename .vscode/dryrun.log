@@ -1,0 +1,10 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/bkrasnos/Documents/fract-ol'
+gcc -Wall -Werror -Wextra   -c -o srcs/event.o srcs/event.c
+gcc -Wall -Werror -Wextra   -c -o srcs/fractol.o srcs/fractol.c
+gcc -Wall -Werror -Wextra   -c -o srcs/main.o srcs/main.c
+gcc -Wall -Werror -Wextra   -c -o srcs/tools.o srcs/tools.c
+gcc -Wall -Werror -Wextra   -c -o srcs/keys.o srcs/keys.c
+gcc -Wall -Werror -Wextra srcs/event.o srcs/fractol.o srcs/main.o srcs/tools.o srcs/keys.o -lmlx -framework OpenGL -framework AppKit -o fractol
+make: Leaving directory `/Users/bkrasnos/Documents/fract-ol'
+ 

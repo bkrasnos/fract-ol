@@ -6,7 +6,7 @@
 /*   By: bkrasnos <bkrasnos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/05 14:46:17 by bkrasnos          #+#    #+#             */
-/*   Updated: 2022/07/05 14:59:44 by bkrasnos         ###   ########.fr       */
+/*   Updated: 2022/07/07 13:33:17 by bkrasnos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,9 +25,9 @@ int	str_cmp(char *s1, char *s2)
 void	set_color(t_t *t, int color)
 {
 	t->index = (4 * 1000 * t->y_y) + t->x_x * 4;
-	t->ch[t->index] = (t->itier * t->color + 680 + 179) * color;
-	t->ch[t->index + 1] = (t->itier * t->color + 42 + 84) * color;
-	t->ch[t->index + 2] = (t->itier * t->color + 936 + 45) * color;
+	t->ch[t->index] = (t->itier * t->color + 200 + 0 + 255) * color;
+	t->ch[t->index + 1] = (t->itier * t->color + 0 + 0 + 255) * color;
+	t->ch[t->index + 2] = (t->itier * t->color + 0 + 103 + 255) * color;
 	t->ch[t->index + 3] = 0;
 }
 
