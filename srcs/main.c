@@ -6,7 +6,7 @@
 /*   By: bkrasnos <bkrasnos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/05 14:46:15 by bkrasnos          #+#    #+#             */
-/*   Updated: 2022/07/07 12:58:57 by bkrasnos         ###   ########.fr       */
+/*   Updated: 2022/08/10 13:55:06 by bkrasnos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,7 +89,6 @@ void	check_ar(t_t *t)
 	else
 	{
 		write(1, "usage: ./fractol <name>", 23);
-		write(1, "\tmandelbrot\tburningship\tjulia\n", 30);
 	}
 }
 
@@ -115,7 +114,6 @@ int	main(int ac, char *av[])
 	else
 	{
 		write(1, "usage: ./fractol <name>", 23);
-		write(1, "\tmandelbrot\tburningship\tjulia\n", 30);
 	}
 	return (0);
 }

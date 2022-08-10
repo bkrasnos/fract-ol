@@ -6,7 +6,7 @@
 /*   By: bkrasnos <bkrasnos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/05 14:46:10 by bkrasnos          #+#    #+#             */
-/*   Updated: 2022/08/01 13:34:41 by bkrasnos         ###   ########.fr       */
+/*   Updated: 2022/08/10 13:44:50 by bkrasnos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,19 +16,19 @@ void	simple_zoom1(t_t *t)
 {
 	if (t->start_x < 0 && t->start_y < 0 && t->end_x > 0 && t->end_y > 0)
 	{
-		t->start_x = t->start_x + 0.015;
-		t->start_y = t->start_y + 0.015;
-		t->end_x = t->end_x - 0.015;
-		t->end_y = t->end_y - 0.015;
+		t->start_x = t->start_x + 0.010;
+		t->start_y = t->start_y + 0.010;
+		t->end_x = t->end_x - 0.010;
+		t->end_y = t->end_y - 0.010;
 	}
 }
 
 void	simple_zoom2(t_t *t)
 {
-	t->start_x = t->start_x - 0.040;
-	t->start_y = t->start_y - 0.040;
-	t->end_x = t->end_x + 0.040;
-	t->end_y = t->end_y + 0.040;
+	t->start_x = t->start_x - 0.011;
+	t->start_y = t->start_y - 0.011;
+	t->end_x = t->end_x + 0.011;
+	t->end_y = t->end_y + 0.011;
 }
 
 void	init_x_y(t_t *t)
